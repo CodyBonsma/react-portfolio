@@ -21,3 +21,43 @@ nav{
 .navStyle {
     color: white;
 }
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .fullscreen-video-wrap {
+    position: relative;
+    background-color: black;
+    height: 90vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  .main-about {
+    position: relative;
+    z-index: 2;
+  }
