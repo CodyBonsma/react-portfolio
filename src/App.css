@@ -61,3 +61,12 @@ nav{
     position: relative;
     z-index: 2;
   }
+
+  .card {
+    width: 18rem;
+  }
+
+  .card-list {
+      list-style: none;
+      align-items: center;
+  }
