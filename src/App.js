@@ -12,10 +12,11 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
-          <Route path="/about" component={About}/>
-          <Route path="/portfolio" component={Portfolio}/>
-          <Route path="/contact" component={Contact}/>
-          <Route exact path="/" component={About}/>
+          <Route path="/react-portfolio" component={About} />
+          <Route path="/about" component={About} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/contact" component={Contact} />
+          <Route exact path="/" component={About} />
         </Switch>
       </div>
     </Router>

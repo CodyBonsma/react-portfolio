@@ -24,15 +24,15 @@ const Nav = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="nav-links">
-            <Link className="navStyle" to="/about">
-              <li>About</li>
+          <ul className="nav-links ml-auto">
+            <Link className="navStyle bg-transparent" to="/about">
+              <li>ABOUT</li>
             </Link>
-            <Link className="navStyle" to="/portfolio">
-              <li>Portfolio</li>
+            <Link className="navStyle bg-transparent" to="/portfolio">
+              <li>PROJECTS</li>
             </Link>
-            <Link className="navStyle" to="/contact">
-              <li>Contact</li>
+            <Link className="navStyle bg-transparent" to="/contact">
+              <li>LET'S CONNECT</li>
             </Link>
           </ul>
         </div>
