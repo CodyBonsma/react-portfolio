@@ -19,7 +19,7 @@ const About = () => {
                 <h2 className="display-5 ">Welcome to</h2>
               <h1 className="display-3">Ceuds Codes.</h1>
               
-              <p className="lead mb-0">Full-Stack Web Developer with a MERN stack focus.</p>
+              <p className="lead mb-0">I am a Full Stack Web Development student at the Georgia Institute of Technology</p>
             </div>
           </div>
         </div>

@@ -5,7 +5,8 @@ const Portfolio = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="card">
+          <div className="col-lg-3 col-md-6">
+          <div className="card">
           <img className="card-img-top" src={image} alt="Bookish" />
           <div className="card-body">
             <h5 className="card-title">Bookish</h5>
@@ -14,12 +15,13 @@ const Portfolio = () => {
               bulk of the card's content.
             </p>
           </div>
+          <hr/>
           <div className="card-body">
-            <ul className="card-list">
+            <ul className="btn btn-link btn-block">
               <li>
                 <a
                   href="http://gt-bookish.herokuapp.com/"
-                  className="card-link"
+                  className="card-list"
                 >
                   deployed application
                 </a>
@@ -27,7 +29,7 @@ const Portfolio = () => {
               <li>
                 <a
                   href="https://github.com/CodyBonsma/bookish"
-                  className="card-link"
+                  className="card-list"
                 >
                   GitHub repository
                 </a>
@@ -35,6 +37,7 @@ const Portfolio = () => {
             </ul>
           </div>
         </div>
+          </div>
       </div>
     </div>
   );
