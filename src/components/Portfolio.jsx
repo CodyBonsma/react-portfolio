@@ -7,7 +7,6 @@ const Portfolio = () => {
   return (
     <div className="container portfolio">
       <div className="row">
-
         {/* First card body */}
         <div className="col-lg-3 col-md-6">
           <div className="card">
@@ -15,12 +14,13 @@ const Portfolio = () => {
             <div className="card-body">
               <h5 className="card-title">Bookish</h5>
               <p className="card-text">
-                A full stack app that brings readers together in online book clubs
+                A full stack app that brings readers together and allows them to
+                create and join online book clubs
               </p>
             </div>
             <hr />
             <div className="card-body">
-              <ul className="btn btn-link btn-block">
+              <ul className="card-list text-left">
                 <li>
                   <a
                     href="http://gt-bookish.herokuapp.com/"
@@ -42,7 +42,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="col-sm-1"/>
+        <div className="col-sm-1" />
         {/*  second card body */}
         <div className="col-lg-3 col-md-6">
           <div className="card">
@@ -50,12 +50,13 @@ const Portfolio = () => {
             <div className="card-body">
               <h5 className="card-title">City Weather Dashboard</h5>
               <p className="card-text">
-                a dynamic weather dashboard that brings users updated weather forecasts for their searched city
+                a dynamic weather dashboard that brings users updated weather
+                forecasts for their searched city
               </p>
             </div>
             <hr />
             <div className="card-body">
-              <ul className="btn btn-link btn-block">
+              <ul className="card-list text-left">
                 <li>
                   <a
                     href="https://codybonsma.github.io/dynamic-weather-dashboard/"
@@ -77,20 +78,25 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="col-sm-1"/>
+        <div className="col-sm-1" />
         {/*  third card body */}
         <div className="col-lg-3 col-md-6">
           <div className="card">
-            <img className="card-img-top" src={image3} alt="Eat the burger app" />
+            <img
+              className="card-img-top"
+              src={image3}
+              alt="Eat the burger app"
+            />
             <div className="card-body">
               <h5 className="card-title">Eat Da Burger</h5>
               <p className="card-text">
-                A fun app where users can create their own burgers and devour them
+                A fun app where users can create their own burgers and devour
+                them
               </p>
             </div>
             <hr />
             <div className="card-body">
-              <ul className="btn btn-link btn-block">
+              <ul className="card-list text-left">
                 <li>
                   <a
                     href="https://eat-a-fat-burger.herokuapp.com/"
