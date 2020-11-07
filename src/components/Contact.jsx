@@ -1,4 +1,5 @@
 import React from "react";
+import profileImage from "../Images/cody-dog-image.jpg"
 
 const Contact = () => {
   return (
@@ -8,7 +9,7 @@ const Contact = () => {
           <div class="row no-gutters">
             <div class="col-md-4">
               <img
-                src="./assets/cody-dog-image.jpg"
+                src={profileImage}
                 class="card-img"
                 alt="picture of me and my sister"
               />
