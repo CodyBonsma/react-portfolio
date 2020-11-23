@@ -1,7 +1,7 @@
 import React from "react";
 import video from "../video/feet.mp4";
 
-const About = () => {
+const Home = () => {
   return (
     <div className="container-vid">
       <div className="overlay"></div>
@@ -28,4 +28,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Home;

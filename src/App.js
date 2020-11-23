@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import About from "./components/About";
+import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Nav from "./components/Nav";
@@ -12,11 +12,11 @@ function App() {
       <div className="App">
         <Nav />
         <Switch>
-          <Route path="/react-portfolio" component={About} />
-          <Route path="/about" component={About} />
+          <Route path="/react-portfolio" component={Home} />
+          <Route path="/home" component={Home} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
-          <Route exact path="/" component={About} />
+          <Route exact path="/" component={Home} />
         </Switch>
       </div>
     </Router>
