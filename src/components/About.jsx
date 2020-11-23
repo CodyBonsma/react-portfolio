@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../video/three-sisters.mp4";
+import video from "../video/feet.mp4";
 
 const About = () => {
   return (

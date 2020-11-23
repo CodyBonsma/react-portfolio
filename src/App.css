@@ -7,13 +7,14 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
+    z-index: 5;
     /* background: rgb(51, 60, 80); */
     /* background-color: transparent !important; */
 }
 
-.bg-dark {
+/* .bg-dark {
     background-color: transparent !important;
-}
+} */
 
 .nav-links {
     width: 40%;
@@ -28,7 +29,7 @@ nav{
 }
 
 .background-video {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -103,12 +104,9 @@ nav{
 
   .portfolio {
       margin-top: 8%;
+      z-index: 5;
   }
-
-  /* .card-body {
-    background-color: lightgray;
-  } */
-  
+ 
   .contact-card {
     width: auto;
     max-width: 700px;
