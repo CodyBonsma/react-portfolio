@@ -25,8 +25,8 @@ const Nav = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="nav-links ml-auto">
-            <Link className="navStyle bg-transparent" to="/about">
-              <li>ABOUT</li>
+            <Link className="navStyle bg-transparent" to="/home">
+              <li>HOME</li>
             </Link>
             <Link className="navStyle bg-transparent" to="/portfolio">
               <li>PROJECTS</li>
