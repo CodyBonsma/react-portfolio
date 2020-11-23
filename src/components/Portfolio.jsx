@@ -1,6 +1,6 @@
 import React from "react";
 import image from "../Images/Bookish.png";
-import image2 from "../Images/weather.png";
+import image2 from "../Images/verdant-home.png";
 import image3 from "../Images/burger.png";
 import video2 from "../video/cafe.mp4";
 
@@ -58,10 +58,9 @@ const Portfolio = () => {
               <div className="card">
                 <img className="card-img-top" src={image2} alt="Weather App" />
                 <div className="card-body">
-                  <h5 className="card-title">City Weather Dashboard</h5>
+                  <h5 className="card-title">Verdant</h5>
                   <p className="card-text">
-                    a dynamic weather dashboard that brings users updated
-                    weather forecasts for their searched city
+                    A full-stack application that gives green thumbs a place to connect online
                   </p>
                 </div>
                 <hr />
@@ -69,7 +68,7 @@ const Portfolio = () => {
                   <ul className="card-list text-left">
                     <li>
                       <a
-                        href="https://codybonsma.github.io/dynamic-weather-dashboard/"
+                        href="https://verdant-thumbs.herokuapp.com/"
                         className="card-list"
                       >
                         deployed application
@@ -77,7 +76,7 @@ const Portfolio = () => {
                     </li>
                     <li>
                       <a
-                        href="https://github.com/CodyBonsma/dynamic-weather-dashboard"
+                        href="https://github.com/CodyBonsma/verdant"
                         className="card-list"
                       >
                         GitHub repository
