@@ -25,9 +25,9 @@ const Home = () => {
                 Institute of Technology
               </p>
               <h2>
-              <a target="_blank" href="https://www.linkedin.com/in/codybonsma/"><FaLinkedin /></a>  
+              <a target="_blank" id="icon-link" href="https://www.linkedin.com/in/codybonsma/"><FaLinkedin /></a>  
                 {"   "}
-              <a target="_blank" href="https://github.com/CodyBonsma"><FaGithub /></a>  
+              <a target="_blank" id="icon-link" href="https://github.com/CodyBonsma"><FaGithub /></a>  
               </h2>
             </div>
           </div>

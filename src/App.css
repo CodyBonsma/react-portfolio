@@ -118,6 +118,10 @@ nav{
 
   }
 
-  a:link {
-    color: white;
+  /* a:link {
+    color: #000;
+  } */
+
+  #icon-link{
+    color: #000;
   }
