@@ -46,8 +46,8 @@ const Home = () => {
               <div className="row info-buttons">
                 <div className="col-sm-3"/>
                 <div className="col-sm-3">
-                  <a href="/" class="btn btn-5">
-                    Hover
+                  <a href="../Resume/TECHNICAL RESUME OCT - 2020.docx" class="btn btn-5">
+                    Resume
                   </a>
                 </div>
                 <div className="col-sm-3">
