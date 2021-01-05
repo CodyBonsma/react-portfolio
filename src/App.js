@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route exact path="/" component={Home} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
