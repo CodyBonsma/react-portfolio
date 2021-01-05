@@ -17,7 +17,7 @@ nav{
 } */
 
 .nav-links {
-    width: 40%;
+    width: 25%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -73,7 +73,7 @@ nav{
   }
 
   .card-list {
-      list-style: none !important;
+      /* list-style: none !important; */
       align-items: center;
   }
 

@@ -9,7 +9,7 @@ const Nav = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <i className="fas fa-terminal"></i>
       <br/>
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           CeudsCodes
         </a>
         <button
@@ -31,9 +31,9 @@ const Nav = () => {
             <Link className="navStyle bg-transparent" to="/portfolio">
               <li>PROJECTS</li>
             </Link>
-            <Link className="navStyle bg-transparent" to="/contact">
+            {/* <Link className="navStyle bg-transparent" to="/contact">
               <li>LET'S CONNECT</li>
-            </Link>
+            </Link> */}
           </ul>
         </div>
       </nav>
