@@ -28,6 +28,7 @@ const Home = () => {
               </p>
               <h2>
                 <a
+                  className="social-link"
                   target="_blank"
                   id="icon-link"
                   href="https://www.linkedin.com/in/codybonsma/"
@@ -36,6 +37,7 @@ const Home = () => {
                 </a>
                 {"   "}
                 <a
+                  className="social-link"
                   target="_blank"
                   id="icon-link"
                   href="https://github.com/CodyBonsma"
@@ -44,9 +46,12 @@ const Home = () => {
                 </a>
               </h2>
               <div className="row info-buttons">
-                <div className="col-sm-3"/>
+                <div className="col-sm-3" />
                 <div className="col-sm-3">
-                  <a href="../Resume/TECHNICAL RESUME OCT - 2020.docx" class="btn btn-5">
+                  <a
+                    href="../Resume/TECHNICAL RESUME OCT - 2020.docx"
+                    class="btn btn-5"
+                  >
                     Resume
                   </a>
                 </div>

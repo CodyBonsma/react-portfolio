@@ -33,6 +33,7 @@ const Portfolio = () => {
                   <ul className="card-list text-left">
                     <li>
                       <a
+                        target="_blank"
                         href="http://gt-bookish.herokuapp.com/"
                         className="card-list"
                       >
@@ -41,6 +42,7 @@ const Portfolio = () => {
                     </li>
                     <li>
                       <a
+                        target="_blank"
                         href="https://github.com/CodyBonsma/bookish"
                         className="card-list"
                       >
@@ -60,7 +62,8 @@ const Portfolio = () => {
                 <div className="card-body">
                   <h5 className="card-title">Verdant</h5>
                   <p className="card-text">
-                    A full-stack application that gives green thumbs a place to connect online
+                    A full-stack application that gives green thumbs a place to
+                    connect online
                   </p>
                 </div>
                 <hr />
@@ -68,6 +71,7 @@ const Portfolio = () => {
                   <ul className="card-list text-left">
                     <li>
                       <a
+                        target="_blank"
                         href="https://verdant-thumbs.herokuapp.com/"
                         className="card-list"
                       >
@@ -76,6 +80,7 @@ const Portfolio = () => {
                     </li>
                     <li>
                       <a
+                        target="_blank"
                         href="https://github.com/CodyBonsma/verdant"
                         className="card-list"
                       >
@@ -108,6 +113,7 @@ const Portfolio = () => {
                   <ul className="card-list text-left">
                     <li>
                       <a
+                        target="_blank"
                         href="https://eat-a-fat-burger.herokuapp.com/"
                         className="card-list"
                       >
@@ -116,6 +122,7 @@ const Portfolio = () => {
                     </li>
                     <li>
                       <a
+                        target="_blank"
                         href="https://github.com/CodyBonsma/Eat-Da-Burger"
                         className="card-list"
                       >
@@ -129,7 +136,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      </>
+    </>
   );
 };
 
