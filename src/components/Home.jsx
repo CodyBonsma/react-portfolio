@@ -49,7 +49,8 @@ const Home = () => {
                 <div className="col-sm-3" />
                 <div className="col-sm-3">
                   <a
-                    href="../Resume/TECHNICAL RESUME OCT - 2020.docx"
+                    target="_blank"
+                    href="https://docs.google.com/document/d/1hc0u7lhkeoFrWk7XcVb_Bw6tep6twIB7zCtCxLDB-SI/edit?usp=sharing"
                     class="btn btn-5"
                   >
                     Resume
