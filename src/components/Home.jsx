@@ -5,10 +5,10 @@ import video from "../video/feet.mp4";
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false)
-  useEffect(() => {});
 
   const openModal = () => {
     console.log("You clicked OPEN MODAL")
+    setShowModal(prev => !prev);
   }
 
   return (
@@ -23,6 +23,7 @@ const Home = () => {
           //   playsinline={playsinline}
         ></video>
         <div className="container main-about h-100">
+          <Modal showModal={showModal} setShowModal={setShowModal}/>
           <div className="d-flex h-100 text-center align-items-center">
             <div className="w-100 text-white">
               <h2 className="display-5 ">Welcome to</h2>
