@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { MdClose } from "react-icons/md";
 import styled from "styled-components";
-import {useSpring, animated} from "react-spring";
+import profileImage from "../Images/Profile.jpg";
+import { useSpring, animated } from "react-spring";
 
 const Modal = ({ showModal, setShowModal }) => {
   const Background = styled.div`
@@ -26,7 +27,15 @@ const Modal = ({ showModal, setShowModal }) => {
     border-radius: 10px;
   `;
 
+  const ModalImg = styled.img`
+    width: auto;
+    height: 100%;
+    border-radius: 10px 00 10px;
+    background: #000;
+  `;
+
   const ModalContent = styled.div`
+  margin-top: 70px;
     display: flex;
     flex-direction: column;
     justify content: center;
@@ -58,29 +67,42 @@ const Modal = ({ showModal, setShowModal }) => {
   `;
 
   const animation = useSpring({
-      config: {
-          duration: 250
-      },
-      opacity: showModal ? 1 : 0,
-      transform: showModal ? `translateY(0%)` : `translateY(-100%)`
-  })
+    config: {
+      duration: 250,
+    },
+    opacity: showModal ? 1 : 0,
+    transform: showModal ? `translateY(0%)` : `translateY(-100%)`,
+  });
+
+  const modalRef = useRef();
+
+const closeModal = (e) => {
+    if (modalRef.current === e.target){
+        setShowModal(false)
+    }
+}
 
   return (
     <>
       {showModal ? (
-        <Background>
-            <animated.div style={animation}>
-          <ModalWrapper showModal={showModal}>
-            <ModalContent>
-              <h2>Hellllo</h2>
-              <p>Here's some random info about me bro</p>
-              <button>Join Now</button>
-            </ModalContent>
-            <CloseModalButton
-              aria-label="Close modal"
-              onClick={() => setShowModal(prev => !prev)}
-            />
-          </ModalWrapper>
+        <Background ref={modalRef} onClick={closeModal}>
+          <animated.div style={animation}>
+            <ModalWrapper showModal={showModal}>
+              <ModalImg src={profileImage} alt="profilePic" />
+              <ModalContent>
+                <h2>Contact </h2>
+                <ul>
+                  <li>Phone: (912) 531-5946</li>
+                  <li>Email: codybonsma@gmail.com</li>
+                  <li>Searching for: Junior position</li>
+                </ul>
+                <button>Join Now</button>
+              </ModalContent>
+              <CloseModalButton
+                aria-label="Close modal"
+                onClick={() => setShowModal((prev) => !prev)}
+              />
+            </ModalWrapper>
           </animated.div>
         </Background>
       ) : null}
