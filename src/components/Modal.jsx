@@ -1,20 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 
-const Modal = () => {
-const [modalShow, setModalShow] = useState(false)
+const Modal = ({showModal, setShowModal}) => {
+  // const [modalShow, setModalShow] = useState(false)
 
-    return (
-        <>
-        <Button variant="primary" onClick={() => setModalShow(true)}>
-          Launch vertically centered modal
-        </Button>
-  
-        <MyVerticallyCenteredModal
-          show={modalShow}
-          onHide={() => setModalShow(false)}
-        />
-      </>
-    );
+  return <>{showModal ? <div>I'm Modal</div> : null}</>;
 };
 
 export default Modal;

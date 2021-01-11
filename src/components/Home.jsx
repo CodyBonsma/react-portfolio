@@ -1,9 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import Modal from "./Modal";
 import video from "../video/feet.mp4";
 
 const Home = () => {
+  const [showModal, setShowModal] = useState(false)
   useEffect(() => {});
+
+  const openModal = () => {
+    console.log("You clicked OPEN MODAL")
+  }
 
   return (
     <div className="container-vid">
@@ -57,8 +63,8 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="col-sm-3">
-                  <a href="/" class="btn btn-5">
-                    Hover
+                  <a class="btn btn-5" onClick={openModal}>
+                    Contact
                   </a>
                 </div>
               </div>
