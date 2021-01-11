@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { MdClose } from "react-icons/md";
 import styled from "styled-components";
+import {useSpring, animated} from "react-spring";
 
 const Modal = ({ showModal, setShowModal }) => {
   const Background = styled.div`
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    position: fixed;
+    // background: rgba(0, 0, 0, 0.2);
+    // position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,10 +57,19 @@ const Modal = ({ showModal, setShowModal }) => {
     z-index: 10;
   `;
 
+  const animation = useSpring({
+      config: {
+          duration: 250
+      },
+      opacity: showModal ? 1 : 0,
+      transform: showModal ? `translateY(0%)` : `translateY(-100%)`
+  })
+
   return (
     <>
       {showModal ? (
         <Background>
+            <animated.div style={animation}>
           <ModalWrapper showModal={showModal}>
             <ModalContent>
               <h2>Hellllo</h2>
@@ -71,6 +81,7 @@ const Modal = ({ showModal, setShowModal }) => {
               onClick={() => setShowModal(prev => !prev)}
             />
           </ModalWrapper>
+          </animated.div>
         </Background>
       ) : null}
     </>
