@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react";
 import { MdClose } from "react-icons/md";
 import styled from "styled-components";
-import profileImage from "../Images/Profile.jpg";
+import profileImage from "../../Images/Profile.jpg";
 import { useSpring, animated } from "react-spring";
+import "./Modal.css";
 
 const Modal = ({ showModal, setShowModal }) => {
   const Background = styled.div`
@@ -15,7 +16,7 @@ const Modal = ({ showModal, setShowModal }) => {
     align-items: center;
   `;
   const ModalWrapper = styled.div`
-    width: 800px;
+    width: 700px;
     height: 500px;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
     background: #fff;
@@ -35,7 +36,7 @@ const Modal = ({ showModal, setShowModal }) => {
   `;
 
   const ModalContent = styled.div`
-  margin-top: 70px;
+//   margin-top: 70px;
     display: flex;
     flex-direction: column;
     justify content: center;
@@ -76,11 +77,11 @@ const Modal = ({ showModal, setShowModal }) => {
 
   const modalRef = useRef();
 
-const closeModal = (e) => {
-    if (modalRef.current === e.target){
-        setShowModal(false)
+  const closeModal = (e) => {
+    if (modalRef.current === e.target) {
+      setShowModal(false);
     }
-}
+  };
 
   return (
     <>
@@ -90,13 +91,16 @@ const closeModal = (e) => {
             <ModalWrapper showModal={showModal}>
               <ModalImg src={profileImage} alt="profilePic" />
               <ModalContent>
-                <h2>Contact </h2>
-                <ul>
-                  <li>Phone: (912) 531-5946</li>
-                  <li>Email: codybonsma@gmail.com</li>
-                  <li>Searching for: Junior position</li>
-                </ul>
-                <button>Join Now</button>
+                <div className="container-modal">
+                  <div className="row">
+                    <div className="col-sm">
+                      <h1>contact</h1>
+                      {"\n"}
+                      <h3>(912) 531-5946</h3>
+                      <h3>codybonsma@gmail.com</h3>
+                    </div>
+                  </div>
+                </div>
               </ModalContent>
               <CloseModalButton
                 aria-label="Close modal"

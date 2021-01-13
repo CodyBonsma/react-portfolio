@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import Modal from "./Modal";
+import Modal from "./Modal/Modal";
 import video from "../video/feet.mp4";
 
 const Home = () => {
