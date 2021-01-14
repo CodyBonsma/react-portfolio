@@ -26,8 +26,8 @@ const Home = () => {
           <Modal showModal={showModal} setShowModal={setShowModal}/>
           <div className="d-flex h-100 text-center align-items-center">
             <div className="w-100 text-white">
-              <h2 className="display-5 ">Welcome to</h2>
-              <h1 className="display-3">CeudsCodes.</h1>
+              <h2 className="display-5">Welcome to</h2>
+              <h1 className="display-3 front-name">CeudsCodes.</h1>
               <hr />
               <p className="lead mb-0">
                 I am a Full Stack Web Development student at the Georgia

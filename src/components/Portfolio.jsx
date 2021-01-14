@@ -22,7 +22,7 @@ const Portfolio = () => {
               <div className="card">
                 <img className="card-img-top" src={image} alt="Bookish" />
                 <div className="card-body">
-                  <h5 className="card-title">Bookish</h5>
+                  <h5 className="card-title project-title">Bookish</h5>
                   <p className="card-text">
                     A full stack app that brings readers together and allows
                     them to create and join online book clubs
@@ -60,7 +60,7 @@ const Portfolio = () => {
               <div className="card">
                 <img className="card-img-top" src={image2} alt="Weather App" />
                 <div className="card-body">
-                  <h5 className="card-title">Verdant</h5>
+                  <h5 className="card-title project-title">Verdant</h5>
                   <p className="card-text">
                     A full-stack application that gives green thumbs a place to
                     connect online
@@ -102,7 +102,7 @@ const Portfolio = () => {
                   alt="Eat the burger app"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Eat Da Burger</h5>
+                  <h5 className="card-title project-title">Eat Da Burger</h5>
                   <p className="card-text">
                     A fun app where users can create their own burgers and
                     devour them

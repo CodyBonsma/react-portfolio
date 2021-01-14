@@ -94,7 +94,7 @@ const Modal = ({ showModal, setShowModal }) => {
                 <div className="container-modal">
                   <div className="row">
                     <div className="col-sm">
-                      <h1>contact</h1>
+                      <h1 className="contact-title">Contact</h1>
                       {"\n"}
                       <h3>(912) 531-5946</h3>
                       <h3>codybonsma@gmail.com</h3>
